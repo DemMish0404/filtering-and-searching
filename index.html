@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<script src="./script.js" defer></script>
+
+<style>
+   body{
+      font-family: Arial, Helvetica, sans-serif;
+   }
+
+   .products{
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: repeat(auto-fill , minmax(290px , 1fr));
+   }
+
+   .product img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+   }
+
+
+   .product.hidden{
+      display: none;
+   }
+</style>
+<body>
+   <input  placeholder="search ..." type="search" id="search-products-input">
+   <div class="categories" id="categories">
+
+      <!-- пример input type="checkbox" -->
+      <!-- <div class="category" data-category-name="">
+         <input  id="cameras"  class="category-check" type="checkbox" >
+         <label for="cameras"> камеры</label>
+      </div> -->
+
+
+   </div>
+   <div class="products" id="products-body">
+
+      <!-- пример карточки продукта (ниже) -->
+
+      <!-- <div class="product">
+         <img src="./images/cannon_eos_camera.png" alt="">
+         <h4>camera</h4>
+         <span>$400</span>
+      </div> -->
+
+      
+
+
+     
+   </div>
+</body>
+</html>
